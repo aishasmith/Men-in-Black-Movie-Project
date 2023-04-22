@@ -1,0 +1,379 @@
+/*===============================================GENERAL LAYOUT======================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+root,
+body {
+
+    background-color: #000;
+    background-image: url("../images/astronaut-background-full-hd-1920x1080-101445.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+
+footer {
+    border-top: solid 2px #fff;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.copyrightSection {
+    background-color: #000;
+}
+
+/*----------------------------------------NAVIGATION--------------------------------*/
+.navbar-brand,
+.navbar-brand:hover {
+    border: solid 3px #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#navbarNav #navigation {
+    position: fixed;
+    top: 0;
+}
+
+/*-------------------------------------------TYPOGRAPHY---------------------------------------*/
+
+h1 {
+    font-size: 1.250rem;
+    font-weight: 700;
+    font-family: 'tycho', 'Source Sans Pro', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.667rem;
+    margin-bottom: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    color: #cf1d4c;
+    text-align: center;
+}
+
+p {
+
+    color: #f2f2f2;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+/*----------------------------------------------CLASSES----------------------------------------*/
+.container {
+    display: grid;
+    padding-top: 0.625rem;
+    align-content: center;
+    font-family: 'Sources', sans-serif;
+    padding-bottom: 4.167em;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+
+    grid-row-gap: 5rem;
+    justify-items: center;
+    /*remove space on the left*/
+    align-content: center;
+    /*remove space on the left*/
+}
+
+.role {
+
+    color: #f2f2f2;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 55px;
+}
+
+
+[class*=team-] img {
+    display: grid;
+    justify-items: center;
+    border-radius: 50%;
+    border: 2px solid #f2f2f2;
+
+}
+
+/*used because to select all images have difference numbers assigned*/
+
+.copyrightSection {
+    padding: 30px;
+    height: 180px;
+      background-color: #000;
+    border-top: solid 3px #f2f2f2;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.social-tag {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Open Sans sans-serif;
+}
+i {
+    font-size: 2rem;
+    color: #1e9e93;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+ .heading {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+/*=============================================**MEDIA**====================================*/
+/*============================================**QUERIES**===================================*/
+
+/*--------------------------*480/30em*-----------------------*/
+@media(min-width: 30em) {
+
+    body {
+
+        background-color: #000;
+        background-image: url("../images/astronaut-background-full-hd-1920x1080-101445.jpg");
+        font-size: 1rem;
+    }
+
+
+    h1 {
+        font-size: 2em;
+        font-family: 'Source Sans', sans-serif;
+    }
+
+    h3 {
+        color: #cf1d4c;
+        font-size: 1.75rem;
+    }
+
+    .container {
+        display: grid;
+        padding-top: 5em;
+        align-content: center;
+    }
+
+    .team {
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        grid-row-gap: 5rem;
+        justify-items: center;
+        /*remove space on the left*/
+        align-content: center;
+    }
+
+    .role {
+        color: #f2f2f2;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        padding-left: 55px;
+
+    }
+    .social-tag {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Open Sans sans-serif;
+}
+     .heading {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+}
+
+/*-------------------------*768/48em*-------------------------*/
+@media(min-width: 48em) {
+
+
+    body {
+
+        background-color: #000;
+        background-image: url("../images/astronaut-background-full-hd-1920x1080-101445.jpg");
+        font-size: 1rem;
+    }
+
+
+    h1 {
+        font-size: 2.5em;
+        font-family: 'tycho', 'Source Sans', 'Open Sans', sans-serif;
+
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        color: #cf1d4c;
+
+    }
+
+    .container {
+        display: grid;
+        padding-top: 10px;
+        align-content: center;
+        font-family: 'Sources', sans-serif;
+    }
+
+    .team {
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        grid-row-gap: 5rem;
+        justify-items: center;
+        /*remove space on the left*/
+        align-content: center;
+    }
+
+    .role {
+        color: #f2f2f2;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        padding-left: 55px;
+
+    }
+    
+    .social-tag {
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: Open Sans sans-serif;
+}
+     .heading {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+
+
+/*---------------------------------GLOBAL VIEW 1024/64em*-----------------------*/
+@media(min-width: 64em) {
+
+
+    body {
+        background-color: #000;
+        background-image: url("../images/astronaut-background-full-hd-1920x1080-101445.jpg");
+
+    }
+
+
+    footer {
+        background-color: #000;
+        height: 70px;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+
+    h1 {
+        font-family: 'tycho', 'Source Sans Pro', sans-serif;
+        font-size: 3.75em;
+        font-weight: 700;
+        color: #f2f2f2;
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 48px;
+        color: #48dbfb;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        padding-top: 10px;
+        align-content: center;
+        font-family: 'Sources', sans-serif;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+
+        grid-row-gap: 5rem;
+        justify-items: center;
+        /*remove space on the left*/
+        align-content: center;
+        /*remove space on the left*/
+    }
+
+
+    .role {
+        color: #f2f2f2;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        padding-left: 65px;
+
+    }
+
+
+
+    [class*=team-] img {
+        display: grid;
+        justify-items: center;
+        border-radius: 50%;
+        border: 2px solid #f2f2f2;
+
+    }/*used because to select all images have difference numbers assigned*/
+
+    .copyright {
+        padding: 30px;
+    }
+    
+    .social-tag {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Open Sans sans-serif;
+}
+     .heading {
+        font-size: 3.75em;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
